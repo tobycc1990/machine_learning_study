@@ -34,7 +34,7 @@ for i in xrange(0, train_num):
     sample = []
     result = 0
     for j in xrange(0, feature_dim):
-        weight = round(random.uniform(-100, 100), 2)
+        weight = round(random.uniform(-1, 1), 2)
         result = result + parameters[j] * weight
         sample.append(str(weight))
     result = result + parameters[-1]
@@ -52,7 +52,7 @@ for i in xrange(0, test_num):
     sample = []
     result = 0
     for j in xrange(0, feature_dim):
-        weight = round(random.uniform(-100, 100), 2)
+        weight = round(random.uniform(-1, 1), 2)
         result = result + parameters[j] * weight
         sample.append(str(weight))
     result = result + parameters[-1]
